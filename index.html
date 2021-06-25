@@ -1,8 +1,40 @@
  
 <!DOCTYPE html>
 <html>
-<body>
+<body>onload="init()"
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
-</html>
+<  <div id="firepad"></div>
+  <script>
+    function init() {
+      // Initialize Firebase.
+      // TODO: replace with your Firebase project configuration.
+      var config = {
+        apiKey: ""AIzaSyC5bX20tQPzJh3K2s87FzLZyBrhP7fDpPc"",
+        authDomain: "tactileye.firebaseapp.com",
+        databaseURL: "https://tactileye-default-rtdb.firebaseio.com/"
+      };
+     firebase.initializeApp(config);
+
+
+  <span class="c1">// Get Firebase Database reference.</span>
+  <span class="kd">var</span> <span class="nx">firepadRef</span> <span class="o">=</span> <span class="nx">firebase</span><span class="p">.</span><span class="nx">database</span><span class="p">().</span><span class="nx">ref</span><span class="p">();</span>
+
+  <span class="c1">// Create CodeMirror (with lineWrapping on).</span>
+  <span class="kd">var</span> <span class="nx">codeMirror</span> <span class="o">=</span> <span class="nx">CodeMirror</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">firepad</span><span class="dl">'</span><span class="p">),</span> <span class="p">{</span> <span class="na">lineWrapping</span><span class="p">:</span> <span class="kc">true</span> <span class="p">});</span>
+
+  <span class="c1">// Create Firepad (with rich text toolbar and shortcuts enabled).</span>
+  <span class="kd">var</span> <span class="nx">firepad</span> <span class="o">=</span> <span class="nx">Firepad</span><span class="p">.</span><span class="nx">fromCodeMirror</span><span class="p">(</span><span class="nx">firepadRef</span><span class="p">,</span> <span class="nx">codeMirror</span><span class="p">,</span> <span class="p">{</span>
+    <span class="na">richTextShortcuts</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">richTextToolbar</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">defaultText</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Hello, World!</span><span class="dl">'</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+
+
+  </script>://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.8/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>/html>
