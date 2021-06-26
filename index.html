@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- See http://www.firepad.io/docs/ for detailed embedding docs. -->
-<html>
+<html lang="zh-cmn-Hans">
 
 <head>
   <meta charset="utf-8" />
@@ -28,7 +28,7 @@
 </head>
 
 <body onload="init()">
-  <div id="firepad-container"></div>
+  <div id="firepad-container" alt="打字框"></div>
 
   <script>
     function init() {
@@ -54,7 +54,7 @@
       //// Initialize contents.
       firepad.on('ready', function() {
         if (firepad.isHistoryEmpty()) {
-          firepad.setHtml('<span style="font-size: 24px;">Rich-text editing with <span style="color: red">Firepad!</span></span><br/><br/>Collaborative-editing made easy.\n');
+          firepad.setHtml('<span style="font-size: 24px;">这是专属 <span style="color: red">触目</span></span><br/><br/>的在线文档！\n');
         }
       });
     }
