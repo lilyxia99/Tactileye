@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Style for the Sidebar */
+      .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #555;
+        overflow-x: hidden;
+        padding-top: 16px;
+        display: none;
+
+      }
+
+      /* Style for the Sidebar Links */
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+		  transition: transform 0.5s ease-in-out;
+      }
+
+      /* Style for the Active Link */
+      .sidebar a.active {
+        color: #fff;
+        background-color: #4CAF50;
+      }
+
+      /* Style for the Sidebar Links on Hover */
+      .sidebar a:hover:not(.active) {
+        color: #fff;
+        background-color: #777;
+      }
+
+      /* Style for the Main Content */
+      .main {
+        margin-left: 0;
+        padding: 1px 16px;
+        height: 100%;
+        transition: margin-left 0.5s;
+      }
+
+      /* Style for the Images */
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .images img {
+        width: 30%;
+        height: auto;
+        margin: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .images img:hover {
+        opacity: 0.7;
+      }
+
+      .images h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      /* Responsive Design for Small Screens */
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: none;
+        }
+        .sidebar a {
+          float: left;
+        }
+        .main {
+          margin-left: 0;
+        }
+        .images {
+          display: block;
+        }
+        .images img {
+          width: 80%;
+          height: auto;
+          margin: 10px auto;
+        }
+      }
+		
+	.dropdown-content {
+	padding-left: 20px;
+	}
