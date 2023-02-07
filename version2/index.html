@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  <link rel="stylesheet" href="style.css" type="text/css">
+	  <link rel="stylesheet" href="sidebar.css" type="text/css">
+	  	  <link rel="stylesheet" href="id-background.css" type="text/css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="#home" class="filter-btn" style=" border:none;text-align: left;font-weight: bold; "data-filter="all" class="active">Home</a>
+			<div class="dropdown">
+				<a href="#home" class="dropbtn filter-btn" style="font-weight: bold; border:none;"data-filter="tactile" id="tactile" >Tactile</a>
+			<div  class="dropdown-content" >
+				<a href="#tactileye-page">Tactileye</a>
+				<a href="#tactile-theatre-page">Tactile Cinema</a>
+				<a href="#tactile-bracelets-page">Tactile Bracelets</a>
+				<a href='#Tactile-Mahjong-page'>Tactile-Mahjong</a>
+				<a href='#Touch-Jam-Workshop-page'>Touch-Jam-Workshop</a>
+				<a href='#Empty-Touch-Workshop-page'>Empty-Touch-Workshop</a>
+			</div>
+			</div>
+		<div class="dropdown">
+			<a href="#home" class="dropbtn filter-btn" style=" border:none;font-weight: bold;"data-filter="engagement" id="engagement">Engagement</a>
+		  <div  class="dropdown-content" >
+			<a href="#tactileye-page">Tactileye</a>
+			<a href="#knotty-magic-workshop-page">Knotty Magic Workshop</a>
+			<a href='#Push-Hands-Animation-Workshop-page'>Push Hands Animation Workshop</a>
+			<a href='#Stapoleology-page'>Stapoleology</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+			<a href="#home" class="dropbtn filter-btn" style=" font-weight: bold;border:none;"data-filter="video" id="video">Animation and Video</a>
+		  <div  class="dropdown-content" >
+			<a href='#Rotten-Girls-Love-page'>Rotten Girl's Love</a>
+			<a href='#Frame-page'>Frame</a>
+			<a href='#Run-page'>Run</a>
+			<a href='#The-Horse-Guessing-Game-page'>The Horse Guessing Game</a>
+			<a href='#Scar-page'>Scar</a>
+			<a href='#Cat-page'>Cat</a>
+		  </div>
+		</div>
+		
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact </a>
+    </div>
+
+	  		
+				    
+	  <!--First page or return button-->
+	  <div id="openBtn" href="#home"class="btn" alt="Leilei menu 磊蕾目录">
+		</div>
+		<div id="returnBtn" href ="#home"class="btn" alt="return">
+		</div>
+
+		<div></div>
+    <!-- Main Content -->
+	<!---filter-->
+    <div>
+		<div class="filters">
+      <span class="w3-margin-right filters" >Filter:</span> 
+      <button class="filter-btn radius" data-filter="all">ALL</button>
+      <button class="filter-btn radius" data-filter="tactile"><i class="fa fa-hand-o-up w3-margin-right"></i>tactile</button>
+      <button class="filter-btn  radius" data-filter="video"><i class="fa fa-photo w3-margin-right"></i>Animation and Video</button>
+      <button class="filter-btn  radius" data-filter="engagement"><i class="fa fa-hand-peace-o w3-margin-right"></i>Engagement</button>
+    </div>
+	<!--filter ends-->
+
+	<!--#home-->
+		<div class="main content" id="home">
+		<!-- Images Section -->
+      <div class="images" id="project-gallery home" alt="Image Display 图像陈列">
+		  
+		<div class="tall project-card"  id="Stapoleology" style="grid-column: span 1" alt="Stapoleology 订杆钉学">
+			<img  style="height:100%; width:100%;" src="https://media.discordapp.net/attachments/1069655720204697660/1069655805059682384/Stapoleology.jpg?width=543&height=1032" alt="Stapoleology">
+		  </div>
+
+		<div class="wide tactile video project-card" id="Tactile-Theatre" style="grid-column: span 3;grid-row: span 2" alt="tactile theatre" href="#tactile-theatre-page"><img style="height:auto;" src="https://cdn.discordapp.com/attachments/1069687149659693086/1069687493806542849/2021.7.jpg" alt="tactile theatre">
+		  </div>
+
+		  <div style="grid-column: span 1;grid-row: span 1;" class="tactile project-card engagement"id="tactileye" href="#tactileye-page" ><img style="width:110%" src="https://cdn.discordapp.com/attachments/1069801716310093874/1069802325276893194/7.29.gif" alt="Tactileye"></div>
+		  
+		  <div style="grid-column: span 1;grid-row: span 1" id="tactileye-bracelets" class="project-card" href="#tactile-bracelets-page"><img style="height: 108%; padding-top: 5px;" src="https://media.discordapp.net/attachments/1071488328534331462/1071488547976138822/IMG_4854.jpg?width=1444&height=1083" alt="Tactile-animation-bracelets 触觉动画手串"></div>
+		  
+		<div class="tall tactile project-card" id="tactileye-majhong" style="grid-column: span 2" href="#Tactile-Mahjong-page"><img style="height:100%;width: 100%;" src="https://cdn.discordapp.com/attachments/1069687619056832622/1069688738868908092/DSC08756.jpg" alt="tactile mahjong"></div>
+        	
+		 	<div class="wide tactile project-card engagement" id="touch-jam" href="#Touch-Jam-Workshop-page"><img style=" width:105%;" src="https://cdn.discordapp.com/attachments/1069659516519600218/1069660389849178153/P1110344.JPG" alt="Touch Jam Workshop"></div>
+
+		  <div class="wide video project-card" id="rotten-girls-love" href="#Rotten-Girls-Love-page"><img style=" width:103%;" src="https://cdn.discordapp.com/attachments/1069662629813047296/1071492163071909929/Screen_Shot_2020-12-16_at_3.41.08_PM.png" alt="Rotten Girl's Love 腐女的爱"></div>
+
+		  <div  class=" project-card engagement"id="Knotty-Magic-Workshop" href="#knotty-magic-workshop-page" ><img style="height:110%" src="https://cdn.discordapp.com/attachments/1072335146931466280/1072335361675632792/Screenshot_2023-02-06_at_8.57.49_PM.png" alt="Knotty Magic Workshop"></div>
+		  
+		  <div class="wide video project-card" style="grid-column: span 4;" id="frame" href="#Frame-page"><img style="width:103%;" src="https://cdn.discordapp.com/attachments/1069662642840547498/1069663186837590096/image.png" alt="Frame"></div>
+
+		  <div  class=" project-card video"id="Run" href="#Run-page" ><img style="height:110%" src="https://cdn.discordapp.com/attachments/1069662647454273556/1071491837602308136/Screen_Shot_2020-12-16_at_12.27.52_PM.png" alt="Run"></div>
+
+		  <div  class=" project-card video"id="Scar" href="#Scar-page" ><img style="height:110%" src="https://cdn.discordapp.com/attachments/1069662605985190002/1072317375560560741/IMG_5652.PNG" alt="Scar"></div>
+
+		  <div  class=" project-card video"id="The-Horse-Guessing-Game" href="#The-Horse-Guessing-Game-page" ><img style="height:110%" src="https://cdn.discordapp.com/attachments/1069662756028022864/1071491748100050944/Screen_Shot_2020-12-16_at_12.48.02_PM.png" alt="The Horse Guessing Game"></div>
+		  <div  class=" project-card video"id="Cat" href="#Cat-page" ><img style="height:110%" src="https://cdn.discordapp.com/attachments/1069661997119058090/1072334716948193310/Screenshot_2023-02-06_at_8.55.10_PM.png" alt="Cat"></div>
+        
+        
+      </div>
+    </div>
+	  <!--#home end-->
+
+	  <!--Tactileye-->
+	  <div id="tactileye-page" class="main">
+		  <img style="width:15%" src="https://cdn.discordapp.com/attachments/1069801716310093874/1069802325276893194/7.29.gif" alt="Tactileye">
+		  <br><br>
+		  "Tactileye" is an art collective that focuses on developing what we call "Tactile Cinema" while doing all kinds of research, workshops, and knowledge production on tactile art. Tactileye is a platform, and each member is an individual artist. We all have various body abilities and welcome anyone to join, participate, contribute, and lead.<br>
+			Our Wechat account:<br>
+			<img scr="https://cdn.discordapp.com/attachments/1069686543125598278/1071913069351010364/image.png"style="width:15%">
+			<br>
+			Our database: <a href="https://www.yuque.com/tactileye" style="color:blue;">Tactileye's Yuque</a>
+		<!--Tactileye ends-->
+	</div>
+
+		<!--Tactile Mahjong-->
+		<div class="main" id="Tactile-Mahjong-page">
+				<div style='display: flex; padding: 20px;padding-left:0;'>
+					<div style='flex: 0.6;'>
+						<div class="gallery">
+							<div class="gallery-item" style="width:50%">
+								<img src="https://cdn.discordapp.com/attachments/1069687619056832622/1069688738868908092/DSC08756.jpg">
+							</div>
+							<div class="gallery-item" style="width:50%">
+								<img src="https://cdn.discordapp.com/attachments/1069822447991410810/1069824091982405762/DSC08779_min-min.jpg">
+							</div>
+						</div>
+					</div>
+					<div style='flex: 0.4; padding-left:20px'>
+						<b><i>Tactile Mahjong</i></b><br>Board Game, Chengdu, 7-9/2021 <br>
+						Touch is deeply related to memory and can easily trigger imagination, but people ignore their communication most of the time. In this board game,&nbsp;the players' eyes are blindfolded. By coming up with an imaginative&nbsp;description of the tactile bottles, people use their tactile sensibility to&nbsp;puzzle other players and eventually win the game.<br>
+						<br>
+						The rule is a little similar to the traditional rule of Chinese Mahjong but&nbsp;still has a very different core mechanism. When giving out a bottle, one&nbsp;describes what the bottle feels like or what it reminds one of, and other&nbsp;players decide whether or not to take it depending on the description.<br>
+						<img src="https://cdn.discordapp.com/attachments/1069687619056832622/1072015655244681216/Screen-Shot-2022-10-09-at-9.png" style="width:100%;">
+						A bottle = a card (catagorized by tactile feelings.)
+					</div>
+				</div>
+			<img src="https://cdn.discordapp.com/attachments/1069687619056832622/1072016112251830304/image.png" style="width:1">
+			<div class="responsive-container">
+				<iframe src="https://player.vimeo.com/video/656584979?h=3e623fe0d7" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" class=""></iframe>
+				</div>
+				<div style='display: flex; padding: 20px;'>
+						<div class="gallery">
+							<div class="gallery-item"style="width:50%" >
+								<img src="https://cdn.discordapp.com/attachments/1069687619056832622/1072016732551655486/image.png">
+							</div>
+							<div class="gallery-item" style="width:50%">
+								<img src="https://cdn.discordapp.com/attachments/1069687619056832622/1072016762356383774/Leilei-Xia-_Tactile_Portfolio.png">
+								Tactile Mahjong has traveled to various art festivals and public events
+							</div>
+						</div>
+			</div>
+		</div>
+		<!--Tactile Mahjong Ends-->
+		
+
+		<!--Tactile Bracelets-->
+		<div class="main" id="tactile-bracelets-page">
+			<div class="gallery">
+				<div class="gallery-item" style="padding-left:10px;">
+					<b><i>Tactile Bracelets<br>
+					</i></b>
+					<br>Clay and Wood, 12/2020-now<br>
+					<br>
+					“Tactile Animation Bracelets” is a bracelet that creates an animation effect through touch. When the “audience” presses the beads one by&nbsp;one, they can experience change of the shape on the beads.<br>
+					&nbsp;<br>
+				</div>
+				<div class="gallery-item" style="width:50%">
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071915699318034554/Leilei-Xia-_Tactile_Portfolio.png">
+					<p>This bracelet provides a changing feelings of lines </p>
+				</div>
+				<div class="gallery-item" >
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071488614854295572/IMG_4863.JPG">
+					<p>The beads have holes changing from big to small and back to big. By Pressing the beads, the user can feel the change of the hole size, a frame-by-frame animation toggled with hands.</p>
+			</div>
+			</div>
+			<br><br>
+			<div style="display: flex;">
+				<div style="flex: 0.7; padding: 20px;">
+				<div class="gallery">
+					<div class="gallery-item" style="width:30%" >
+						<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918728834465885/image.png" alt="in person workshop">
+						in person workshop
+				</div>
+				<div class="gallery-item" style="width:40%">
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918670726574181/image.png" alt="result from the online workshop">
+					bracelet result from the online workshop
+						</div>
+					<div class="gallery-item" style="width:30%" >
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918622336884826/image.png" alt="screenshot of the online workhop">
+					group screenshot of the online workhop on the topic of relationship with friends
+						</div>
+					<div class="gallery-item" style="width:40%;">
+						<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918402651832431/image.png" alt="screenshot from the workshop for office workers">
+						screenshot from the workshop for office workers
+						</div>
+						<div class="gallery-item" style="width:60%;">
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918558910619668/image.png" alt="impression object from the online workshop" >
+					impression object from the online workshop
+					</div>
+					<div class="gallery-item" >
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918539218358272/image.png"alt="bracelet made in online workshop">
+					participants' bractes from online workshop
+					</div>
+					<div class="gallery-item" style="width:30%">
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918518041321504/image.png" >
+					participants' bractes from online workshop
+					</div>
+					<div class="gallery-item" style="width:40%">
+					<img src="https://cdn.discordapp.com/attachments/1071488328534331462/1071918461883781160/image.png" alt="Tutorial made for people">
+					Tutorial made for people
+					</div>
+				</div>
+				  <!-- Content for the first column goes here -->
+				</div>
+				<div style="flex: 0.3; padding: 20px;">
+					<i><b>Paper Clay Tactile Bracelets</b></i><i><b>Workshop</b></i>, <br>
+					3/2022<br>
+					Jianze Zhao and I developed a paper clay version.&nbsp;and organized two online and one&nbsp;offline paper clay workshops,&nbsp;including group building for&nbsp;companies.<br><br>
+					<i><b>Tactile Animation&nbsp;Bracelets Online&nbsp;Workshop, </b></i><br>
+					3/2022, Host:&nbsp;Jianze Zhao, Leilei Xia<br>
+					We initiated an online workshop&nbsp;every two people partner together&nbsp;to maker their bracelets based on&nbsp;their feelings to each other. We&nbsp;mailed the participants materials&nbsp;package and instructions on the&nbsp;making. Each partners would make&nbsp;a special bead, and they try to&nbsp;transform one into another, as if&nbsp;they are trying to get close to and&nbsp;understand each other.<br>
+					<br>
+				  <!-- Content for the second column goes here -->
+				</div>
+			  </div>  
+		</div>
+		<!--Tactile Bracelets ends-->
+	
+<!--Tactile Cinema-->
+	  <div id="tactile-theatre-page" class="main" >
+		  <br>
+		<br>
+		  <div class="responsive-container">
+		  <iframe src="https://player.vimeo.com/video/486329391" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" class=""></iframe>
+		  </div>
+		<br>
+			<b><i>Tactile Cinema</i></b><br>
+		<i>(Nezha Conquers the Dragon King)</i>
+			<div style="text-align: left;">7'. Live performance with various props. 2020.<br>
+		This performance uses only tactile experience to tell a story. A cinematic experience without using sight.&nbsp;The story is a Chinese folklore called Nezha Conquers the Dragon King, about fighting feudalism. I chose it because it’s also a famous animation that is exciting to watch,&nbsp;which gives me enough fight&nbsp;scenes to translate.&nbsp;I recorded the lines and narration&nbsp;for the story, and arranged gestures&nbsp;and sensations based on the plot.<br>
+		<i></i></div>
+		<br>
+		<img src="https://cdn.discordapp.com/attachments/1069687149659693086/1071649801483067392/tools.jpg">
+		  <br>All the props that are used in the performance are found or repurposed daily objects.&nbsp;<br>
+		<br>
+		  <div style="text-align: left;"><i>Nezha Conquers the Dragon King</i> was performed in various art fair and festivals. </div><br>
+		<div class="gallery" >
+			<div class="gallery-item">
+			<img src="https://cdn.discordapp.com/attachments/1069687149659693086/1069688038491422770/IMG_9457.jpeg" style="grid-column: span 1;" style="width: 100%">
+			</div>
+		<div class="gallery-item">
+			<img src="https://cdn.discordapp.com/attachments/1069687149659693086/1069688037702897755/IMG_9456.jpeg" style="width: 100%"></div>
+			<div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1069822447991410810/1069823642273337364/IMG_2216.jpeg" style="width: 100%"></div>
+			<div class="gallery-item"><img src="https://cdn.discordapp.com/attachments/1069687149659693086/1069687985571909733/Screen_Shot_2020-12-12_at_9.01.44_PM.png" style="width: 100%"></div>
+		</div>
+		<br><br>
+		<!---You will Shake Hands With Me--->
+		  <div class="responsive-container">
+		  <iframe src="https://player.vimeo.com/video/573673867?h=5c0307230a" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" ></iframe>
+		  </div>
+		 <br>
+		  <b><i>You Will Shake Hands With Me</i></b>
+		  <div style="text-align: left;">6'28'', video tutorial and live performance with various props, 2021<br>
+		A tactile performance exploring the tension and dynamic in intimate relationship, and the pain and relief within it.&nbsp;</div>
+		<br>
+		
+		  <div class="gallery ">
+      <div class="gallery-item">
+        <img src="https://cdn.discordapp.com/attachments/1071863138326151168/1071863276553646144/image.png" alt="video still,shake hands with object in hand">
+      </div>
+      <div class="gallery-item">
+        <img src="https://cdn.discordapp.com/attachments/1071863138326151168/1071863229866844160/image.png" alt="video still: Repeat the process at least 2-3 times">
+      </div>
+      <div class="gallery-item">
+        <img src="https://cdn.discordapp.com/attachments/1071863138326151168/1071863155178881125/image.png" alt="vdieo still: Drp water ont he back of the touchee's hand">
+      </div>
+      <div class="gallery-item">
+        <img src="https://cdn.discordapp.com/attachments/1071863138326151168/1071863209188925440/image.png" alt="Clip several clips on the back of the touchee. One of them should be in he middle of shoulder blades.">
+      </div>
+    </div>
+		  
+      </div>
+
+<!--Touch Jam Workshop-->
+	  <div id="Touch-Jam-Workshop-page" class="main">
+		<div style='display: flex; '>
+			<div style='flex: 0.3;'><b><i>Tactile Jam Workshop</i></b><br>In “Touch Jam” workshop, sparticipants share their life experiences and transform that experience into improvised tactile theatre within a day. We&nbsp;have done more than 6 Touch Jams in various places.
+		<img  style="width:90%" src="https://cdn.discordapp.com/attachments/1069656693891420241/1072163134674063450/Tactileye-Portfolio_Leilei-Version2.png" alt="Tactile theatre exploration in touch jam workshop, two people's hands are connected together."><br>
+		(Above:Tactile theatre exploration in touch jam workshop, two people's hands are connected together.)
+		</div>
+		<div style='flex: 0.7; padding-left:2%'>
+			<img src="https://cdn.discordapp.com/attachments/1069659516519600218/1069660389849178153/P1110344.JPG" alt="Touch Jam Workshop">
+		</div></div><br><br>
+		<div style='display: flex; '>
+			<div style='flex: 0.5;'>
+				<img src="https://cdn.discordapp.com/attachments/1069656693891420241/1072162902913589289/Tactileye-Portfolio_Leilei-Version.png">
+			</div>
+			<div style='flex: 0.5;padding-left:2%'>
+				<img src="https://cdn.discordapp.com/attachments/1069656693891420241/1072162921561460867/Tactileye-Portfolio_Leilei-Version.png">
+			</div>
+		</div><br>
+		<div style="text-align: left;"><b>Review of all the Tactile Jam Workshop I have hosted (Lick on the name to go to specific page, many pages are under construction)</b><br>
+			<span style="background-color: #951f1f; color: #0bffd6;"><br>
+			<i><a href="Period-Touch-Jam-Workshop" rel="history"></a></i></span></div><i>“Tactile Riddle” Workshop</i>, <b>Goehe Instutite China</b>,Beijing, 7/2022, <br>
+			<i>“Mushrooms” </i>Tactile Workshop, Kunming, <b>Book2Hand Bookstore</b>, Kunming, 8/2022<br>
+			<i><span style="background-color: #c15bb6;"><a href="Women-in-Disability-Touch-Jam-Workshops" rel="history">“Love Live” Female with Disabilities Tactile Jam Workshop</a></span>, </i><b>SoengJoengToi</b>, 12/2021,<br>
+			<i>“Touch and Imagine” Online Tactile Workshop</i>, <b>Online</b>, 10/2021-1/2022,<br>
+			“<i>Tactile conversation</i>”, <b>Chengdu A4 International Artist Residency Program Workshop</b>, 30/9/2021<br>
+			<i>“Friendship” Workshop</i>, <b>Art Museum of Guangzhou Academy of Fine Art</b>, “Repetition, Deep Listening” Pan&nbsp;South East Asia Triennial, public art program workshop,&nbsp;17/4/2021,<br>
+			<span style="background-color: #951f1f; color: #0bffd6;"><i><a href="Period-Touch-Jam-Workshop" rel="history">“Period” Tactile Jam</a></i></span>, <b>SoengJoengToi</b>, 25/2/2021,<br>
+			<i></i><br>
+			<br>
+			<i></i><br>
+			<i><span style="background-color: #c15bb6;"><a href="Women-in-Disability-Touch-Jam-Workshops" rel="history"></a></span></i><br>
+			<i></i><br>
+			<i></i><div style="text-align: left;"><br>
+			<br>
+			</div><br>
+			<br>
+	  </div>
+
+<!--Rotten Girl's Love-->
+	  <div id="Rotten-Girls-Love-page" class="main">
+		<br><br><br>
+		<div style="font-size:20px;color:red;"><b>WEAR HEADPHONES BEFORE WATCHING</b></div><br>
+		
+		<div class="responsive-container"><iframe src="https://player.vimeo.com/video/338361041" width="1920" height="1080" frameborder="0" allow=" fullscreen" allowfullscreen="" class=""></iframe></div>
+		<div style='display: flex;'>
+			<div style='flex: 0.2;'>
+				
+			</div>
+			<div style='flex: 0.8;'><br><br>
+				<b><i>Rotten Girl's Love</i></b><br>
+				23'10'', 1920*1080p. Live action with animation, 2019.<br>
+				A girl, fascinated with gay romance, fell in love with a gay man, and started questioning her identity both as a Fujoshi and as a heterosexual.
+			</div>
+		</div>
+	  </div>
+
+<!--Frame-->
+	  <div id="Frame-page" class="main">
+		<div class="responsive-container"><iframe src="https://player.vimeo.com/video/419173182" width="3840" height="1080" frameborder="0" allow="fullscreen" allowfullscreen="" class=""></iframe></div>
+		<div style='display: flex; '>
+			<div style='flex: 0.2;'>
+				</div>
+			<div style='flex: 0.8;'>
+				<b><i>Frame</i></b><br>
+				13'37''', 3840*1080p. Multi-media performance with hand-drawn animation projection, 2020<br>A documentarian, who always can't capture the most important footage, tries to use documentary film to understand her grandfather's death. Through this story, I reflected on how media is framing and limiting our memory. The video image I projected is shown below on the right. I had various interactions with the projection shown below on the left.</div></div>
+
+	  </div>
+
+<!--Run-->
+	  <div id="Run-page" class="main">
+		<div class="responsive-container"><iframe src="https://player.vimeo.com/video/317246438" width="1920" height="1080" frameborder="0" allow="fullscreen" allowfullscreen="" class=""></iframe></div>
+		<div style='display: flex; '><div style='flex: 0.2;'></div><div style='flex: 0.8;'><br><br><b><i>Run</i></b><br>4'20'', 1980*1080p.Digital animation made frame by frame with photoshop  effect, 2019.<br>Racing in a running field is as dizzy as looking at a Morie Pattern.<br><br>Harvard College Film Festival, Staff Choice, Boston,<br>
+			(below are all official selection & Screenings)<br>
+			Feinaki Beijing Aniamtion Week,Beijing<br>
+			Ivy Film Festival, New York and Rhode Island, <br>
+			Malt Adult, New York and Ohio,<br>
+			Paris International Animation Film Festival, Paris<br>
+			Insomnia International Animation Festival, Moscow<br>
+			Defy Film Festival, Nasville,<br>
+			New Wave Film Festival, HongKong,<br>
+			Experimental Super Star, Novi Sad,<br>
+			Stoptrik International Film Festival, Maribord,<br>
+			Animation Volda Festival, Volda.<br>
+			
+		</div></div>
+	  </div>
+<!--Scar-->
+	  <div id="Scar-page" class="main">
+		<div class="responsive-container"><iframe src="https://player.vimeo.com/video/339690229" width="1920" height="1080" frameborder="0" allow="fullscreen" allowfullscreen="" class=""></iframe></div>
+		<div style='display: flex; '><div style='flex: 0.2;'></div><div style='flex: 0.8;'><br><br><b><i>Scar</i></b><br>4’16’’, 1920*1080p.Animation made with needle scratching on paper, 2019.<br>
+
+			After I attended a funeral, the unrealistic feeling engulfed me. Maybe living in the world is like engraving on paper, even though we try to live so hard, it turns out fo be so transparent from the far.<br>
+			
+			58th Ann Arbor International Film Festival, The BarbaraAronofsky Latham Award for an Emerging Experimental Video Artist, Michigan
+			
+		</div></div>
+	  </div>
+
+<!--The Horse Guessing Game-->
+<div id="The-Horse-Guessing-Game-page" class="main">
+	<div class="responsive-container"><iframe src="https://player.vimeo.com/video/509377104" width="1920" height="1080" frameborder="0" allow="fullscreen" allowfullscreen="" class=""></iframe></div>
+	<div style='display: flex; '><div style='flex: 0.2;'></div><div style='flex: 0.8;'><br><br><b><i>The Horse Guessing Game</i></b><br>8’59’’, 1920*1080p. Stop-motion animation 2021.<br>
+
+		A girl is taken by a magician into the world of shadow, only to find that she is trapped in the realm of hidden rules.
+		
+	</div></div>
+  </div>
+
+<!--Cat-->
+<div id="Cat-page" class="main">
+	<div class="responsive-container"><iframe src="https://player.vimeo.com/video/247428656" width="1920" height="1080" frameborder="0" allow="fullscreen" allowfullscreen="" class=""></iframe></div>
+	<div style='display: flex; '><div style='flex: 0.2;'></div><div style='flex: 0.8;'><br><br><b><i>Cat</i></b><br>
+		3'25'', 1980*1080p. Hand-drawn, cut-out, sand, paint on glass animation, water color animation, and so on, 2017.<br>
+		Award:<br>
+		Five Continents International Film Festival, January 2018, Best Student Short Film<br>
+		Official selection:<br>
+		Los Angeles Independent Film Festival Awards<br>
+		Los Angeles Cinefest <br>
+		Sunday Shorts Film Festival<br>
+		Hollywood Screening Film Festival<br>
+		New Orleans International Film Festival<br>
+		Semi-Final list:<br>
+		Miami Independent Film Festival Monthly Edition<br>
+
+		
+	</div></div>
+  </div>
+
+    <!-- JavaScript to Control the Sidebar -->
+    <script>
+      const openBtn = document.getElementById("openBtn");
+      const sidebar = document.getElementById("sidebar");
+      const main = document.querySelector(".main");
+		let isOpen = false;
+		
+		//open button
+
+		document.querySelectorAll('.btn').forEach(function(element) {
+			element.addEventListener('click', function(event) {
+			  const sectionId = this.getAttribute('href').substr(1);
+				
+			  
+			  document.querySelectorAll('.main').forEach(function(element) {
+				element.style.display = 'none';
+			  });
+			  document.getElementById(sectionId).style.display = 'block';
+
+			  const projects = document.querySelectorAll(".project-card");
+			  if(sectionId=="home"){
+					project.style.display = "flex";
+			  }
+			  // Add the desired behavior
+			
+			const targetSidebarDiv = document.querySelector(`.sidebar a[href="#${sectionId}"]`);
+			targetSidebarDiv.click();
+			});
+		  });
+
+		
+		//-----sidebar change page
+		
+		const sidebarLinks = document.querySelectorAll('.sidebar a');
+		
+		//hide any sections other home----------comment thie part when editing
+	
+		const contentDivs = document.querySelectorAll('.main');
+		contentDivs.forEach(div => {
+		  if (div.id !== 'home') {
+			div.style.display = 'none';
+		  }
+		});
+		//----------------
+
+		document.querySelectorAll('.sidebar a').forEach(function(element) {
+		  element.addEventListener('click', function(event) {
+			const sectionId = this.getAttribute('href').substr(1);
+			  
+			document.querySelectorAll('.sidebar a').forEach(function(element) {
+			  element.style.backgroundColor = '';
+			});
+			document.querySelectorAll('.main').forEach(function(element) {
+			  element.style.display = 'none';
+			});
+			  
+			this.style.backgroundColor = 'orange';
+			document.getElementById(sectionId).style.display = 'block';
+		
+		  });
+		});
+
+				document.querySelectorAll('.project-card').forEach(function(element) {
+		  element.addEventListener('click', function(event) {
+			const sectionId = this.getAttribute('href').substr(1);
+			  
+			
+			document.querySelectorAll('.main').forEach(function(element) {
+			  element.style.display = 'none';
+			});
+			document.getElementById(sectionId).style.display = 'block';
+			// Add the desired behavior
+			
+			const targetSidebarDiv = document.querySelector(`.sidebar a[href="#${sectionId}"]`);
+			targetSidebarDiv.click();
+		  });
+		});
+		
+		
+
+		
+		
+	//Filter Buttons
+	  const filterBtns = document.querySelectorAll(".filter-btn");
+
+		filterBtns.forEach((btn) => {
+		  btn.addEventListener("click", (e) => {
+			const type = e.target.dataset.filter;
+			const projects = document.querySelectorAll(".project-card");
+			filterBtns.forEach((btn) => btn.style.backgroundColor = "white");
+			e.target.style.backgroundColor = "orange";
+			projects.forEach((project) => {
+			  if (type === "all") {
+				project.style.display = "flex";
+			  } else {
+				project.classList.contains(type)
+				  ? (project.style.display = "flex")
+				  : (project.style.display = "none");
+			  }
+			});
+		  });
+		});
+		//filter buttons ends
+		
+		//Zoom the image
+		let images = document.querySelectorAll(".gallery-item img");
+		let expandedImg = document.createElement("img");
+		let overlay = document.createElement("div");
+
+		overlay.classList.add("overlay");
+		overlay.appendChild(expandedImg);
+		document.body.appendChild(overlay);
+
+		for (let i = 0; i < images.length; i++) {
+		  images[i].addEventListener("click", function() {
+			expandedImg.src = this.src;
+			overlay.style.display = "block";
+		  });
+		}
+
+		overlay.addEventListener("click", function() {
+		  this.style.display = "none";
+		});
+
+		//zoom the image ends
+
+
+
+    </script>
+
+  </body>
+</html>
+

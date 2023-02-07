@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      /* Script for toggling the Engagement, Videos, Stills, Writings list */
+      function myFunction() {
+        var x = document.getElementById("myDropdown");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="index.html" class="active">Leilei Xia</a>
+      <a href="#" onclick="myFunction()">Experience</a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#work1">Tactileye</a>
+        <a href="#work2">Empty Touch Workshop</a>
+        <a href="#work3">Knotty Magic Workshop</a>
+      </div>
+      <a href="#videos">Videos</a>
+      <a href="#stills">Stills</a>
+      <a href="#writings">Writings</a>
+      <a href="#about">About Me</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <h2 id="work1">Work 1 Page</h2>
+      <p>Welcome to Work 1 Page</p>
+    </div>
+  </body>
+</html>

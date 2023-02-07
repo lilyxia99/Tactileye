@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #555;
+        overflow-x: hidden;
+        padding-top: 16px;
+      }
+
+      /* Style for the Sidebar Links */
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+      }
+
+      /* Style for the Active Link */
+      .sidebar a.active {
+        color: #fff;
+        background-color: #4CAF50;
+      }
+
+      /* Style for the Sidebar Links on Hover */
+      .sidebar a:hover:not(.active) {
+        color: #fff;
+        background-color: #777;
+      }
+
+      /* Style for the Main Content */
+      .main {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 100%;
+      }
+
+      /* Responsive Design for Small Screens */
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {
+          float: left;
+        }
+        .main {
+          margin-left: 0;
+        }
+      }
+	.dropdown-content {
+  	padding-left: 20px;
+	}

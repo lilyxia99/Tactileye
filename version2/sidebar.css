@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+.sidebar {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	background-color: #FFFFFF;
+	overflow-x: hidden;
+	padding-top: 130px;
+	font-size: 12px;
+	padding-right: 30px;
+
+	  /*animation-name: slideIn;
+	  animation-duration: 0.5s;
+	  animation-fill-mode: forwards;*/
+	}
+	.dropdown-content {
+	padding-left: 20px;
+		 /*display: none;*/
+		 display:block;
+		border: none;
+	}
+
+.dropdown-content a:hover {background-color: hotpink;}
+
+/*.dropdown:hover .dropdown-content {display: block;}*/
+
+.dropdown:hover .dropbtn {background-color: #8cc63c; color: white;}
+
+@keyframes slideIn {
+  from {
+	transform: translateX(-200px);
+  }
+  to {
+	transform: translateX(0);
+  }
+}
+
+
+.in{
+  	animation-name: slideIn;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	}
+.out {
+	animation-name: slideOut;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	}
+
+@keyframes slideOut {
+  from {
+	transform: translateX(0);
+  }
+  to {
+	transform: translateX(-200px);
+  }
+}
+
+
+/* Style for the Sidebar Links */
+.sidebar a {
+padding: 4px 10px 4px 20px;
+text-decoration: none;
+font-size: 12px;
+color: #818181;
+display: block;
+	border-radius: 5px;
+
+}
+
+.sidebar a.selected {
+  color: orange;
+}
+
+
+      /* Style for the Active Link */
+      .sidebar a.active {
+        color: #fff;
+        background-color: #749706;
+      }
+
+      /* Style for the Sidebar Links on Hover */
+      .sidebar a:hover:not(.active) {
+        color: #fff;
+        background-color: #777;
+      }
+
+
+		  
+	  #openBtn{
+		position:fixed; 
+		left:15px; 
+		top:10px;
+		z-index: 999;
+		  background-image: url("../LeileiXia.gif");
+		  background-size: cover; /* or contain */
+		  width: 120px; /* adjust width to match the gif size */
+		  height: 80px; /* adjust height to match the gif size */
+		  border: none; /* remove border */
+		  animation-name: slideInBtn;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		  cursor: pointer;
+		}
+
+		#returnBtn{
+			position:fixed; 
+			right:0px; 
+			top:10px;
+			z-index: 999;
+			  background-image: url("https://cdn.discordapp.com/attachments/1069671537440985140/1071985347774394411/Untitled_Artwork.png");
+			  background-size: cover; /* or contain */
+			  width: 100px; /* adjust width to match the gif size */
+			  height: 80px; /* adjust height to match the gif size */
+			  border: none; /* remove border */
+			  animation-name: slideInBtn;
+			  animation-duration: 0.5s;
+			  animation-fill-mode: forwards;
+			  cursor: pointer;
+			}
+		  
+	  #openBtn:hover {
+		  width: 150px; 
+		  height: 100px;
+		  transform: scale(1.2);
+		}
+
+		#returnBtn:hover {
+			width: 150px; 
+			height: 100px;
+			transform: scale(1.2);
+		  }
+		
+		

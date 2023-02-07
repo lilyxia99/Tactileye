@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <style>
+	   .sidebar {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #555;
+        overflow-x: hidden;
+        padding-top: 16px;
+        display: none;
+		  /*animation-name: slideIn;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;*/
+		}
+
+		@keyframes slideIn {
+		  from {
+			transform: translateX(-200px);
+		  }
+		  to {
+			transform: translateX(0);
+		  }
+		}
+		  .in{
+			  animation-name: slideIn;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		  }
+		  .out {
+		  animation-name: slideOut;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		}
+
+		@keyframes slideOut {
+		  from {
+			transform: translateX(0);
+		  }
+		  to {
+			transform: translateX(-200px);
+		  }
+		}
+
+
+      /* Style for the Sidebar Links */
+      .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+		
+      }
+
+      /* Style for the Active Link */
+      .sidebar a.active {
+        color: #fff;
+        background-color: #4CAF50;
+      }
+
+      /* Style for the Sidebar Links on Hover */
+      .sidebar a:hover:not(.active) {
+        color: #fff;
+        background-color: #777;
+      }
+
+      /* Style for the Main Content */
+      .main {
+        margin-left: 0;
+        padding: 1px 16px;
+        height: 100%;
+        transition: margin-left 0.5s;
+      }
+
+      /* Style for the Images */
+      .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+		 align-content: flex-start;
+      }
+
+      .images img {
+        width: 30%;
+        height: auto;
+        margin: 10px;
+  		object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .images img:hover {
+        opacity: 0.7;
+      }
+
+      .images h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: white;
+        text-align: center;
+      }
+
+      /* Responsive Design for Small Screens */
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: none;
+        }
+        .sidebar a {
+          float: left;
+        }
+        .main {
+          margin-left: 0;
+        }
+        .images {
+          display: block;
+        }
+        .images img {
+          width: 80%;
+          height: auto;
+          margin: 10px auto;
+        }
+      }
+		
+	.dropdown-content {
+	padding-left: 20px;
+	}
+		  
+	  #openBtn{
+		position:fixed; 
+		left:15px; 
+		top:10px;
+		z-index: 999;
+		  background-image: url("LeileiXia.gif");
+		  background-size: cover; /* or contain */
+		  width: 120px; /* adjust width to match the gif size */
+		  height: 80px; /* adjust height to match the gif size */
+		  border: none; /* remove border */
+		  animation-name: slideInBtn;
+		  animation-duration: 0.5s;
+		  animation-fill-mode: forwards;
+		}
+		  
+	  #openBtn:hover {
+		  width: 150px; 
+		  height: 100px;
+		  transform: scale(1.2);
+		}
+	  </style>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <a href="#" class="active">Home</a>
+      <a href="#" onclick="myFunction()">Experience</a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#work1">Tactileye</a>
+        <a href="#work2">Empty Touch Workshop</a>
+        <a href="#work3">Knotty Magic Workshop</a>
+      </div>
+      <a href="#">Clients</a>
+      <a href="#">Contact </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Topbar with a Button to Open the Sidebar -->
+      <div id="openBtn" alt="menu">
+		</div>
+
+      <!-- Images Section -->
+      <div class="images">
+        <img src="https://media.discordapp.net/attachments/1069655720204697660/1069655805059682384/Stapoleology.jpg?width=543&height=1032" alt="Stapoleology">
+		  <img style="height: 30%; width:30%;" src="https://cdn.discordapp.com/attachments/1069662642840547498/1069663186837590096/image.png" alt="Frame">
+		  <img src="https://picsum.photos/id/240/200/300" alt="image4">
+        <img style="height: 30%; width:30%;" src="https://cdn.discordapp.com/attachments/1069657902731755571/1069658176951169206/Screen_Shot_2021-07-26_at_10.35.49_AM.jpg" alt="image2">
+        
+        
+      </div>
+    </div>
+
+    <!-- JavaScript to Control the Sidebar -->
+    <script>
+      const openBtn = document.getElementById("openBtn");
+      const sidebar = document.getElementById("sidebar");
+      const main = document.querySelector(".main");
+		let isOpen = false;
+
+      openBtn.addEventListener("click", function () {
+    isOpen = !isOpen;
+		if (isOpen) {
+			setTimeout(function(){
+				sidebar.style.display = "block";
+		  main.style.marginLeft = "200px";
+		  openBtn.style.left = "210px";
+			},100)
+		  sidebar.classList.remove("out");
+		  openBtn.classList.remove("out");
+			sidebar.classList.add("in");
+		  openBtn.classList.add("in");
+		} else {
+			sidebar.classList.remove("in");
+		  openBtn.classList.remove("in");
+		  sidebar.classList.add("out");
+		  openBtn.classList.add("out");
+		  setTimeout(function () {
+			sidebar.style.display = "none";
+			openBtn.style.left = "15px";
+			main.style.marginLeft = "0";
+		  },0);
+		}
+	  });
+		
+		function myFunction() {
+        var x = document.getElementById("myDropdown");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </body>
+</html>
+

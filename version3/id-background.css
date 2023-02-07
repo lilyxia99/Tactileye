@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#Stapoleology:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069797515274235904/Untitled_Artwork.png");
+		background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#Tactile-Theatre:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069799530565992468/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+#frame:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069801030512025713/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tactileye:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069802925863473332/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+
+	background-repeat: no-repeat;
+}
+
+#tactileye-majhong{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069830628230569995/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#Stapoleology:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1071494483130191932/Untitled_Artwork.png");
+		background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#Tactile-Theatre:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069799530565992468/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#touch-jam:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1071495047503151116/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+#frame:hover{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069801030512025713/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tactileye:hover{
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1071499377601941604/Untitled_Artwork.jpg");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tactileye-majhong{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1069830628230569995/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#tactileye-bracelets{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1071489745902899309/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rotten-girls-love{
+	background-blend-mode:overlay;
+	background:url("https://cdn.discordapp.com/attachments/1069671537440985140/1071493152000704582/Untitled_Artwork.png");
+		background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
