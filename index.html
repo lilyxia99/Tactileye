@@ -735,6 +735,29 @@
 
 		//zoom the image ends
 
+		// Function to display the correct section based on the URL hash
+		function displaySectionFromHash() {
+			const hash = window.location.hash;
+			if (hash) {
+			  const sectionId = hash.substr(1);
+			  const targetSidebarDiv = document.querySelector(`.sidebar a[href="${hash}"]`);
+			  if (targetSidebarDiv) {
+				targetSidebarDiv.click();
+			  } else {
+				// If the hash doesn't match any sidebar link, display the home section
+				document.querySelector('.sidebar a[href="#home"]').click();
+			  }
+			} else {
+			  // If there's no hash, display the home section
+			  document.querySelector('.sidebar a[href="#home"]').click();
+			}
+		  }
+		  
+		  // Call the function when the page loads
+		  displaySectionFromHash();
+		  
+		  // Call the function when the hash changes
+		  window.addEventListener('hashchange', displaySectionFromHash);
 
 
     </script>
