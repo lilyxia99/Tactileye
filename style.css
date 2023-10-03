@@ -232,3 +232,25 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 		font-size: 16px;
 	}
 }
+
+.imgLeft{
+	margin-top:20px;
+	margin-right:10px;
+	padding-right:10px;
+}
+
+.leftColumn{
+	padding-right:10px;
+}
+.rightColumn{
+	padding-left:10px;
+}
+
+.middleColumn{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.rightColumn .leftColumn .middleColumn div{
+	padding-bottom:20px;
+}
